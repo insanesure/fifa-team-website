@@ -4,6 +4,8 @@
     --secondary: #ffffff;
     --accent: #6a3de4;
     --gold: #D4AF37;
+    --rich-gradient: linear-gradient(135deg, #000000, #1a1a1a, #000000);
+    --gold-gradient: linear-gradient(45deg, #B8860B, #D4AF37, #FFD700);
     --text-primary: #1a1a1a;
     --text-secondary: #ffffff;
     --spacing-unit: 8px;
@@ -64,17 +66,15 @@ h1, h2, h3 {
     align-items: center;
 }
 
-.logo a {
-    text-decoration: none;
-    color: var(--primary);
-    display: flex;
-    align-items: center;
-    gap: calc(var(--spacing-unit) * 2);
+.logo {
+    background: transparent;
 }
 
 .crest-logo {
     height: 40px;
     width: auto;
+    background: transparent;
+    mix-blend-mode: multiply;
 }
 
 .logo-text {
@@ -82,6 +82,15 @@ h1, h2, h3 {
     font-size: 1.8rem;
     font-weight: 600;
     letter-spacing: -1px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    gap: calc(var(--spacing-unit) * 2);
+    background: transparent;
 }
 
 .nav-links {
@@ -110,14 +119,25 @@ h1, h2, h3 {
 /* Hero Section */
 .hero {
     height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/hero-bg.jpg');
+    background: var(--rich-gradient);
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
     display: flex;
     align-items: center;
     position: relative;
     overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--gold-gradient);
+    opacity: 0.1;
+    pointer-events: none;
 }
 
 .hero-content {
@@ -458,6 +478,8 @@ footer {
 .footer-logo .crest-logo {
     height: 50px;
     width: auto;
+    background: transparent;
+    mix-blend-mode: multiply;
 }
 
 .footer-logo span {
@@ -815,10 +837,9 @@ footer {
 
 /* News Carousel Section */
 .news-carousel {
-    padding: calc(var(--spacing-unit) * 10) 0;
-    background: linear-gradient(45deg, var(--primary), #1a1a1a);
-    position: relative;
-    overflow: hidden;
+    padding: calc(var(--spacing-unit) * 20) 0;
+    background: var(--rich-gradient);
+    color: var(--text-secondary);
 }
 
 .news-container {
@@ -829,23 +850,21 @@ footer {
 
 .news-header {
     text-align: center;
-    margin-bottom: calc(var(--spacing-unit) * 8);
+    margin-bottom: calc(var(--spacing-unit) * 12);
 }
 
 .news-header h2 {
-    font-size: 3rem;
+    font-size: 4rem;
     margin-bottom: calc(var(--spacing-unit) * 2);
-}
-
-.news-subtitle {
-    font-size: 1rem;
-    letter-spacing: 4px;
-    color: var(--accent);
+    background: var(--gold-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .carousel-container {
     position: relative;
     overflow: hidden;
+    padding: calc(var(--spacing-unit) * 4) 0;
 }
 
 .carousel-track {
@@ -855,43 +874,46 @@ footer {
 }
 
 .news-card {
-    min-width: calc(33.333% - var(--spacing-unit) * 3);
-    background: white;
+    min-width: calc(33.333% - calc(var(--spacing-unit) * 3));
+    background: rgba(255, 255, 255, 0.05);
     border-radius: var(--border-radius);
     overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     cursor: pointer;
-    transition: transform 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .news-card:hover {
     transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
 
 .news-image {
     position: relative;
-    height: 250px;
-    background: var(--primary);
+    padding-top: 60%;
     overflow: hidden;
 }
 
 .image-placeholder {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(45deg, #1a1a1a, #333);
+    background: var(--gold-gradient);
+    opacity: 0.3;
 }
 
 .news-tag {
     position: absolute;
     top: calc(var(--spacing-unit) * 2);
     left: calc(var(--spacing-unit) * 2);
-    background: var(--accent);
-    color: var(--secondary);
     padding: calc(var(--spacing-unit)) calc(var(--spacing-unit) * 2);
-    border-radius: calc(var(--border-radius) / 2);
+    background: var(--gold-gradient);
+    color: var(--text-primary);
     font-size: 0.8rem;
     font-weight: 600;
-    letter-spacing: 1px;
+    border-radius: var(--border-radius);
 }
 
 .news-preview {
@@ -899,53 +921,27 @@ footer {
 }
 
 .news-preview h3 {
-    font-family: 'Clash Display', sans-serif;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     margin-bottom: calc(var(--spacing-unit) * 2);
-    line-height: 1.3;
+    color: var(--text-secondary);
 }
 
 .news-preview p {
-    font-size: 1rem;
-    line-height: 1.6;
-    opacity: 0.8;
+    color: rgba(255, 255, 255, 0.7);
     margin-bottom: calc(var(--spacing-unit) * 3);
+    font-size: 0.9rem;
 }
 
 .read-more {
-    font-size: 0.9rem;
+    color: var(--gold);
+    font-size: 0.8rem;
     font-weight: 600;
-    color: var(--accent);
     letter-spacing: 1px;
+    transition: color 0.3s ease;
 }
 
-.carousel-nav {
-    position: absolute;
-    bottom: calc(var(--spacing-unit) * -8);
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: calc(var(--spacing-unit) * 2);
-}
-
-.nav-button {
-    background: var(--accent);
-    color: var(--secondary);
-    border: none;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.2rem;
-    transition: all 0.3s ease;
-}
-
-.nav-button:hover {
-    transform: scale(1.1);
-    background: #9500ff;
+.news-card:hover .read-more {
+    color: #FFD700;
 }
 
 /* Article Modal */
@@ -1286,4 +1282,45 @@ footer {
     .player-carousel h3 {
         font-size: 1.8rem;
     }
+}
+
+.carousel-nav {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 calc(var(--spacing-unit) * 2);
+    pointer-events: none;
+}
+
+.nav-button {
+    background: var(--gold-gradient);
+    color: var(--text-primary);
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    pointer-events: auto;
+    opacity: 0.8;
+}
+
+.nav-button:hover {
+    transform: scale(1.1);
+    opacity: 1;
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+}
+
+.nav-button:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+    transform: scale(1);
 } 
