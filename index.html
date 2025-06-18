@@ -1,1 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POST OAK FC | Official Site</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="#home">
+                    <img src="./images/tram crest transparent .jpg" alt="Post Oak FC Crest" class="crest-logo">
+                    <span class="logo-text">POST OAK FC</span>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#philosophy">PHILOSOPHY</a></li>
+                <li><a href="#jerseys">KITS</a></li>
+                <li><a href="#legacy">LEGACY</a></li>
+            </ul>
+        </div>
+    </nav>
 
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>POST OAK FC</h1>
+            <p class="hero-subtitle">ESTABLISHED 2025</p>
+            <div class="hero-cta">
+                <a href="#philosophy" class="cta-button">DISCOVER OUR LEGACY</a>
+            </div>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="scroll-indicator">
+            <span>SCROLL</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- News Carousel Section -->
+    <section class="news-carousel">
+        <div class="news-container">
+            <div class="news-header">
+                <h2>LATEST NEWS</h2>
+            </div>
+            <div class="carousel-container">
+                <div class="carousel-track">
+                    <article class="news-card" data-article="dribble">
+                        <div class="news-image">
+                            <img src="./images/Fletcher news article.png" alt="Fletcher News Article" style="width: 100%; height: 100%; object-fit: contain;">
+                            <span class="news-tag">MATCH REPORT</span>
+                        </div>
+                        <div class="news-preview">
+                            <h3>Dribbled Out of Bounds. Again.</h3>
+                            <p>Fletcher Under Fire After 17th Sideline Exit of the Season - A Statistical Breakdown of Boundary Issues...</p>
+                            <span class="read-more">READ FULL STORY →</span>
+                        </div>
+                    </article>
+
+                    <article class="news-card" data-article="motm">
+                        <div class="news-image">
+                            <img src="./images/Getta article photo.png" alt="Getta Article Photo" style="width: 100%; height: 100%; object-fit: cover;">
+                            <span class="news-tag">ANALYSIS</span>
+                        </div>
+                        <div class="news-preview">
+                            <h3>Scarecrow or Goalkeeper? The Getta Dilemma</h3>
+                            <p>Team considers replacing goalkeeper with inanimate object after another shocking performance...</p>
+                            <span class="read-more">READ FULL STORY →</span>
+                        </div>
+                    </article>
+
+                    <article class="news-card" data-article="contract">
+                        <div class="news-image">
+                            <img src="./images/here we go.png" alt="Biggie Transfer News" style="width: 100%; height: 100%; object-fit: cover;">
+                            <span class="news-tag">CONTROVERSY</span>
+                        </div>
+                        <div class="news-preview">
+                            <h3>Biggie's FUT Champs FC Scandal</h3>
+                            <p>Secret negotiations and contract disputes rock Elite FC's defense...</p>
+                            <span class="read-more">READ FULL STORY →</span>
+                        </div>
+                    </article>
+
+                    <article class="news-card" data-article="shanay">
+                        <div class="news-image">
+                            <img src="./images/Sha nay nay.jpg" alt="Sha Nay Nay Red Card" style="width: 100%; height: 100%; object-fit: contain;">
+                            <span class="news-tag">INVESTIGATION</span>
+                        </div>
+                        <div class="news-preview">
+                            <h3>Sha Nay Nay: Yellow Card Mystery</h3>
+                            <p>Match fixing allegations or genuine struggles under caution?</p>
+                            <span class="read-more">READ FULL STORY →</span>
+                        </div>
+                    </article>
+                </div>
+                <div class="carousel-nav">
+                    <button class="nav-button prev" aria-label="Previous">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="nav-button next" aria-label="Next">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Article Modals -->
+        <div class="article-modal" id="modal-dribble">
+            <div class="modal-content">
+                <button class="close-modal"><i class="fas fa-times"></i></button>
+                <article class="full-article">
+                    <div class="article-header">
+                        <div class="article-image">
+                            <img src="./images/Fletcher news article.png" alt="Fletcher News Article" style="width: 100%; height: 100%; object-fit: contain;">
+                        </div>
+                        <div class="article-meta">
+                            <span class="article-date">JUNE 2, 2025</span>
+                            <h2>Dribbled Out of Bounds. Again.</h2>
+                            <p class="article-subtitle">Fletcher Under Fire After 17th Sideline Exit of the Season</p>
+                            <p class="article-author">By Bukayo Saka | Biggie Pharmacies</p>
+                        </div>
+                    </div>
+                    <div class="article-body">
+                        <p>In what analysts are calling a "textbook case of spatial denial," left winger Fletcher once again dribbled the ball directly out of bounds — unpressured, unprovoked, and utterly unbothered.</p>
+                        
+                        <p>The moment came in the 63rd minute of what had been a tense deadlock. Ji, cool under pressure as always, threaded a perfectly weighted pass down the wing. Fletcher received it cleanly, took one promising touch, and began a run that momentarily sparked hope. Then, in a scene eerily familiar to his teammates, he calmly exited the field with the ball — again.</p>
+                        
+                        <p>No defender touched him. No tactical cue was given. He simply ran out.</p>
+                        
+                        <h3>A Pattern, Not a Fluke</h3>
+                        <p>This marks the 17th time this season Fletcher has voluntarily removed himself and the ball from active play. Midfielder Shonny Shanka — already visibly frustrated from an earlier missed tap-in — could be heard shouting, "Cut inside! Inside! Bro, again?!"</p>
+                        
+                        <p>According to sideline sources, he later sat in the locker room shaking his head and muttering, "We can't keep living like this."</p>
+                        
+                        <blockquote>"He plays the game like he's mapping the earth."<br>- Captain Al Qahtani</blockquote>
+                        
+                        <p>Watanabe, the team's data guru, was more blunt: "We track movement patterns every match. Fletcher's heatmap looks like someone tracing the edge of the screen with a broken controller."</p>
+                        
+                        <div class="stats-breakdown">
+                            <h3>Statistical Breakdown</h3>
+                            <ul>
+                                <li><span>Dribbles Completed (Season):</span> 8</li>
+                                <li><span>Dribbles Ending in Sideline Exit:</span> 17</li>
+                                <li><span>Cutbacks Attempted:</span> 2</li>
+                                <li><span>Cutbacks Completed:</span> 0</li>
+                                <li><span>Times teammates raised arms in disbelief:</span> 27</li>
+                                <li><span>Celebrations wasted due to misplaced optimism:</span> 6</li>
+                            </ul>
+                        </div>
+                        
+                        <h3>Internal Reactions</h3>
+                        <p>Manager Shaquisha refused post-match interviews, instead locking herself in the tactics room with a whiteboard and two full packs of dry-erase markers. Ashton Hall reportedly just stared into space for 11 minutes before whispering, "We practiced that exact play…"</p>
+                        
+                        <blockquote>"It's not even a red card moment, and I still felt violated."<br>- Sha Nay Nay</blockquote>
+                        
+                        <p>Even Getta, the team's famously silent keeper, reportedly broke his usual post-match silence to ask, "Wait… did he do it again?"</p>
+                        
+                        <h3>Fletcher Responds</h3>
+                        <p>When approached after the game, Fletcher stood by his decision.</p>
+                        
+                        <blockquote>"Sometimes the best way forward is… off the field. I saw green space. I went for it."</blockquote>
+                        
+                        <p>When asked if he understood the concept of boundaries, he replied, "I reject linear thinking."</p>
+                        
+                        <p>In a rare show of introspection, he added, "Or maybe I just zoned out."</p>
+                        
+                        <h3>What's Next</h3>
+                        <p>Reports suggest extra training sessions are being planned — involving cones, chalk, lasers, and possibly a shock collar. One assistant coach hinted that future matches may require Fletcher to wear horse blinders "just until he rediscovers the concept of staying in play."</p>
+                        
+                        <p>For now, Fletcher remains a mystery — a player with pace, vision, and absolutely no regard for the touchline.</p>
+                        
+                        <p>The team continues forward. And so, unfortunately, does Fletcher.</p>
+                        
+                        <p>Straight out of bounds.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <div class="article-modal" id="modal-motm">
+            <div class="modal-content">
+                <button class="close-modal"><i class="fas fa-times"></i></button>
+                <article class="full-article">
+                    <div class="article-header">
+                        <div class="article-image">
+                            <img src="./images/Getta article photo.png" alt="Getta Article Photo" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="article-meta">
+                            <span class="article-date">JUNE 1, 2025</span>
+                            <h2>Scarecrow or Goalkeeper? The Getta Dilemma</h2>
+                            <p class="article-subtitle">Team Considers Alternative Options After Latest Goalkeeping Display</p>
+                            <p class="article-author">By Peter Schmeichel | Elite FC Analysis</p>
+                        </div>
+                    </div>
+                    <div class="article-body">
+                        <p>In a groundbreaking study conducted by Elite FC's analytics department, data suggests that placing a scarecrow in goal might actually improve the team's defensive statistics. This revelation comes after Getta's latest performance, where he managed to dodge more shots than he attempted to save.</p>
+                        
+                        <p>"At least a scarecrow would stay in one place," noted tactical analyst James Wilson, reviewing footage of Getta's inexplicable decision to tie his shoelaces during a penalty kick.</p>
+                        
+                        <h3>The Numbers Don't Lie</h3>
+                        <div class="stats-breakdown">
+                            <h3>Performance Analysis</h3>
+                            <ul>
+                                <li><span>Shots Faced:</span> 12</li>
+                                <li><span>Successful Dodges:</span> 11</li>
+                                <li><span>Accidental Saves:</span> 1</li>
+                                <li><span>Times Distracted by Clouds:</span> 4</li>
+                                <li><span>Minutes Spent Adjusting Gloves:</span> 37</li>
+                                <li><span>Birds Mistaken for Ball:</span> 3</li>
+                            </ul>
+                        </div>
+                        
+                        <h3>Expert Opinions</h3>
+                        <p>Former goalkeeper coach Tim Howard was left speechless after watching Getta's latest training session, where he consistently dove in the opposite direction of every shot. "I've never seen anything quite like it," Howard managed to say, "It's almost impressive how he manages to avoid any contact with the ball."</p>
+                        
+                        <blockquote>"We're actually considering if he has some sort of allergic reaction to footballs. It's the only logical explanation at this point."<br>- Team Doctor</blockquote>
+                        
+                        <h3>Alternative Solutions</h3>
+                        <p>The coaching staff has begun exploring various alternatives to improve the team's goalkeeping situation:</p>
+                        <ul>
+                            <li>A particularly tall garden gnome</li>
+                            <li>Three children in a goalkeeper jersey</li>
+                            <li>A cardboard cutout of an actual goalkeeper</li>
+                            <li>The team bus parked across the goal</li>
+                        </ul>
+                        
+                        <blockquote>"At least the scarecrow would have an excuse for being made of straw."<br>- Anonymous Teammate</blockquote>
+                        
+                        <h3>Getta's Response</h3>
+                        <p>When asked about his recent performance, Getta insisted that his unique style is simply "ahead of its time." He defended his technique of closing his eyes during shots, claiming it "enhances his other senses."</p>
+                        
+                        <p>"You can't concede if you can't see the ball going in," he explained, tapping his temple knowingly. "That's just basic science."</p>
+                        
+                        <h3>Looking Ahead</h3>
+                        <p>The team has scheduled additional training sessions, though there's debate about whether these should focus on basic goalkeeping skills or simply teaching Getta which way the goal is facing.</p>
+                        
+                        <blockquote>"We tried putting him in a bright yellow jersey to help him stand out, but somehow he still managed to hide behind the post for most of the match."<br>- Assistant Coach</blockquote>
+                        
+                        <p>For now, the scarecrow option remains on the table, with early testing showing promising results - primarily because it at least stays between the posts for the full 90 minutes.</p>
+                        
+                        <p>The team's equipment manager has been tasked with sourcing a regulation-size scarecrow, just in case. "At least we'll save money on gloves," he noted optimistically.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <div class="article-modal" id="modal-contract">
+            <div class="modal-content">
+                <button class="close-modal"><i class="fas fa-times"></i></button>
+                <article class="full-article">
+                    <div class="article-header">
+                        <div class="article-image">
+                            <img src="./images/here we go.png" alt="Biggie Transfer News" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="article-meta">
+                            <span class="article-date">MARCH 18, 2025</span>
+                            <h2>Contract Crisis: Biggie's FUT Champs FC Connection Exposed</h2>
+                            <p class="article-author">By David "Inside Source" Martinez</p>
+                        </div>
+                    </div>
+                    <div class="article-body">
+                        <p>Elite FC has been thrown into turmoil following revelations of unauthorized contract discussions between star defender Biggie and rival club FUT Champs FC.</p>
+                        <p>Sources close to the situation claim that representatives from FUT Champs FC approached Biggie during last week's tournament, initiating talks despite his current contract with Elite FC running until 2026.</p>
+                        <blockquote>"This kind of approach is not just unprofessional - it's potentially in violation of league regulations," states sports lawyer Jennifer Thompson. "Both the player and FUT Champs FC could face serious consequences."</blockquote>
+                        <p>Elite FC management has called an emergency meeting to address the situation, while FUT Champs FC officials maintain their innocence, claiming any contact was "purely coincidental."</p>
+                        <p>The timing couldn't be worse for Elite FC, with crucial matches ahead and team morale already tested by recent results. The defense, anchored by Biggie, has been a key factor in the team's success this season.</p>
+                        <p>As investigations continue, questions remain about the future of one of Elite FC's most influential players and the potential impact on the team's promotion aspirations.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <div class="article-modal" id="modal-shanay">
+            <div class="modal-content">
+                <button class="close-modal"><i class="fas fa-times"></i></button>
+                <article class="full-article">
+                    <div class="article-header">
+                        <div class="article-image">
+                            <img src="./images/Sha nay nay.jpg" alt="Sha Nay Nay Red Card" style="width: 100%; height: 100%; object-fit: contain;">
+                        </div>
+                        <div class="article-meta">
+                            <span class="article-date">MARCH 17, 2025</span>
+                            <h2>Yellow Peril: Sha Nay Nay's Post-Caution Conundrum</h2>
+                            <p class="article-author">By Robert "The Referee" Anderson</p>
+                        </div>
+                    </div>
+                    <div class="article-body">
+                        <p>The football community is abuzz with speculation following Sha Nay Nay's peculiar pattern of performance dips after receiving yellow cards, leading to heated debates about the true nature of these struggles.</p>
+                        <p>Statistical analysis reveals a striking pattern: after receiving a yellow card, Sha Nay Nay's pass completion rate drops by 40%, and defensive positioning becomes notably erratic.</p>
+                        <blockquote>"The numbers are unusual," admits data analyst Maria Garcia. "The performance variance between pre and post-yellow card situations is statistically significant, but the cause remains unclear."</blockquote>
+                        <p>While some suggest match manipulation, others point to a psychological impact of playing under caution. Team psychologist Dr. James Murray notes: "The pressure of avoiding a second yellow can significantly affect decision-making."</p>
+                        <p>Elite FC's management has strongly denied any allegations of impropriety, pointing to Sha Nay Nay's exemplary record in non-cautioned matches. However, the pattern has caught the attention of league officials.</p>
+                        <p>As investigations continue, the team faces a crucial question: how to manage one of their key players through these yellow card situations while maintaining competitive integrity.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Philosophy Section -->
+    <section id="philosophy" class="philosophy">
+        <div class="section-intro">
+            <h2>OUR PHILOSOPHY</h2>
+            <p class="section-subtitle">THE PILLARS OF EXCELLENCE</p>
+        </div>
+        <div class="principles-grid">
+            <a href="arena.html" class="principle-card">
+                <div class="principle-content">
+                    <div class="principle-icon">
+                        <i class="fas fa-stadium"></i>
+                    </div>
+                    <h3>ARENA & SPONSORS</h3>
+                    <p>Our home and the partners who make it all possible</p>
+                    <span class="explore-link">EXPLORE <i class="fas fa-arrow-right"></i></span>
+                </div>
+                <div class="principle-overlay"></div>
+            </a>
+            <a href="strategy.html" class="principle-card">
+                <div class="principle-content">
+                    <div class="principle-icon">
+                        <i class="fas fa-chess"></i>
+                    </div>
+                    <h3>STRATEGY</h3>
+                    <p>Mastering the art of the game</p>
+                    <span class="explore-link">EXPLORE <i class="fas fa-arrow-right"></i></span>
+                </div>
+                <div class="principle-overlay"></div>
+            </a>
+            <a href="passion.html" class="principle-card">
+                <div class="principle-content">
+                    <div class="principle-icon">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <h3>PASSION</h3>
+                    <p>"Slip Biggie the ball and watch the magic happen."</p>
+                    <span class="explore-link">EXPLORE <i class="fas fa-arrow-right"></i></span>
+                </div>
+                <div class="principle-overlay"></div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Jersey Section -->
+    <section id="jerseys" class="jerseys">
+        <div class="section-intro light">
+            <h2>2025 COLLECTION</h2>
+            <p class="section-subtitle">CRAFTED FOR CHAMPIONS</p>
+        </div>
+        <div class="jersey-showcase">
+            <div class="jersey-item home">
+                <div class="jersey-image-container">
+                    <div class="jersey-placeholder premium-gold">
+                        <span class="coming-soon-text">COMING SOON</span>
+                    </div>
+                </div>
+                <div class="jersey-details">
+                    <span class="jersey-label">HOME KIT</span>
+                    <h3>GOLD EDITION</h3>
+                    <p>A testament to excellence</p>
+                </div>
+            </div>
+            <div class="jersey-item away">
+                <div class="jersey-image-container">
+                    <img src="images/Away kit.jpg" alt="2025 Away Kit" class="jersey-image">
+                </div>
+                <div class="jersey-details">
+                    <span class="jersey-label">AWAY KIT</span>
+                    <h3>MARBLE PURPLE EDITION</h3>
+                    <p>Where elegance meets power</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Legacy Section -->
+    <section id="legacy" class="legacy">
+        <div class="section-intro">
+            <h2>OUR LEGACY</h2>
+            <p class="section-subtitle">WRITING HISTORY</p>
+        </div>
+        <div class="achievements-grid">
+            <div class="achievement-card">
+                <span class="achievement-number">3</span>
+                <h3>DIVISION</h3>
+                <p>Elite League Standing</p>
+            </div>
+            <div class="achievement-card">
+                <span class="achievement-number">60K</span>
+                <h3>ATTENDANCE</h3>
+                <p>Average Per Game</p>
+            </div>
+            <div class="achievement-card">
+                <span class="achievement-number">194</span>
+                <h3>GOALS</h3>
+                <p>Biggie Jamal - Top Scorer</p>
+            </div>
+        </div>
+        <div class="team-quote">
+            <p class="quote-large">"Never in my life, never in my life."</p>
+            <cite>— Shonny Shanka</cite>
+        </div>
+    </section>
+
+    <!-- Team Lineup Section -->
+    <section class="team-lineup">
+        <div class="section-intro">
+            <h2>THE SQUAD</h2>
+            <p class="section-subtitle">OUR WARRIORS</p>
+        </div>
+        <div class="lineup-container">
+            <div class="player-carousel">
+                <div class="carousel-track">
+                    <div class="player-card">
+                        <div class="player-image" style="aspect-ratio: 2/3; overflow: hidden; display: flex; align-items: center; justify-content: center; background: none; border: none; height: 500px;">
+                            <img src="./images/Biggie.png" alt="Biggie Jamal" style="width: 100%; height: 100%; object-fit: contain; border: none;">
+                        </div>
+                        <div class="player-info">
+                            <h3>BIGGIE JAMAL</h3>
+                            <span class="player-position">Striker</span>
+                            <p class="player-number">#2</p>
+                            <p class="player-quote">"Slip Biggie"</p>
+                        </div>
+                    </div>
+
+                    <div class="player-card">
+                        <div class="player-image" style="aspect-ratio: 2/3; overflow: hidden; display: flex; align-items: center; justify-content: center; background: none; border: none; height: 500px;">
+                            <img src="./images/Hog Rider.png" alt="Hog Rider" style="width: 100%; height: 100%; object-fit: contain; border: none;">
+                        </div>
+                        <div class="player-info">
+                            <h3>HOG RIDER</h3>
+                            <span class="player-position">Left Back</span>
+                            <p class="player-number">#2</p>
+                            <p class="player-quote">"HOOOOOG RIDAAAAA!"</p>
+                        </div>
+                    </div>
+
+                    <div class="player-card">
+                        <div class="player-image" style="aspect-ratio: 2/3; overflow: hidden; display: flex; align-items: center; justify-content: center; background: none; border: none; height: 500px;">
+                            <img src="./images/Shonny Shanka.png" alt="Shonny Shanka" style="width: 100%; height: 100%; object-fit: contain; border: none;">
+                        </div>
+                        <div class="player-info">
+                            <h3>SHONNY SHANKA</h3>
+                            <span class="player-position">Center Mid</span>
+                            <p class="player-number">#10</p>
+                            <p class="player-quote">"Never in my life, never in my life."</p>
+                        </div>
+                    </div>
+
+                    <div class="player-card">
+                        <div class="player-image" style="aspect-ratio: 2/3; overflow: hidden; display: flex; align-items: center; justify-content: center; background: none; border: none; height: 500px;">
+                            <img src="./images/Ji.png" alt="Ji" style="width: 100%; height: 100%; object-fit: contain; border: none;">
+                        </div>
+                        <div class="player-info">
+                            <h3>JI</h3>
+                            <span class="player-position">Striker</span>
+                            <p class="player-number">#11</p>
+                            <p class="player-quote">"Cool under pressure, lethal in front of goal."</p>
+                        </div>
+                    </div>
+
+                    <div class="player-card">
+                        <div class="player-image" style="aspect-ratio: 2/3; overflow: hidden; display: flex; align-items: center; justify-content: center; background: none; border: none; height: 500px;">
+                            <img src="./images/Fletcher.png" alt="Fletcher" style="width: 100%; height: 100%; object-fit: contain; border: none; transform: scale(1.4);">
+                        </div>
+                        <div class="player-info">
+                            <h3>FLETCHER</h3>
+                            <span class="player-position">Left Wing</span>
+                            <p class="player-number">#7</p>
+                            <p class="player-quote">"Sometimes the best way forward is... off the field."</p>
+                        </div>
+                    </div>
+
+                    <div class="player-card">
+                        <div class="player-image" style="aspect-ratio: 2/3; overflow: hidden; display: flex; align-items: center; justify-content: center; background: none; border: none; height: 500px;">
+                            <img src="./images/Watanabe.png" alt="Watanabe" style="width: 100%; height: 100%; object-fit: contain; border: none; transform: scale(1.8);">
+                        </div>
+                        <div class="player-info">
+                            <h3>WATANABE</h3>
+                            <span class="player-position">Center Attacking Mid</span>
+                            <p class="player-number">#10</p>
+                            <p class="player-quote">"The game speaks through the data."</p>
+                        </div>
+                    </div>
+
+                    <div class="player-card">
+                        <div class="player-image" style="aspect-ratio: 2/3; overflow: hidden; display: flex; align-items: center; justify-content: center; background: none; border: none; height: 500px;">
+                            <img src="./images/Gingy.png" alt="Gingy" style="width: 100%; height: 100%; object-fit: contain; border: none;">
+                        </div>
+                        <div class="player-info">
+                            <h3>GINGY</h3>
+                            <span class="player-position">Center Mid</span>
+                            <p class="player-number">#6</p>
+                            <p class="player-quote">"Controlling the midfield, one tackle at a time."</p>
+                        </div>
+                    </div>
+
+                    <div class="player-card">
+                        <div class="player-image" style="aspect-ratio: 2/3; overflow: hidden; display: flex; align-items: center; justify-content: center; background: none; border: none; height: 500px;">
+                            <img src="./images/Shaquisha.png" alt="Shaquisha" style="width: 100%; height: 100%; object-fit: contain; border: none; transform: scale(1.4);">
+                        </div>
+                        <div class="player-info">
+                            <h3>SHAQUISHA</h3>
+                            <span class="player-position">Right Wing</span>
+                            <p class="player-number">#14</p>
+                            <p class="player-quote">"Speed kills, technique thrills."</p>
+                        </div>
+                    </div>
+
+                    <div class="player-card">
+                        <div class="player-image" style="aspect-ratio: 2/3; overflow: hidden; display: flex; align-items: center; justify-content: center; background: none; border: none; height: 500px;">
+                            <img src="./images/Sha Nay Nay.png" alt="Sha Nay Nay" style="width: 100%; height: 100%; object-fit: contain; border: none;">
+                        </div>
+                        <div class="player-info">
+                            <h3>SHA NAY NAY</h3>
+                            <span class="player-position">Center Back</span>
+                            <p class="player-number">#4</p>
+                            <p class="player-quote">"The pass button is broken."</p>
+                        </div>
+                    </div>
+
+                    <div class="player-card">
+                        <div class="player-image" style="aspect-ratio: 2/3; overflow: hidden; display: flex; align-items: center; justify-content: center; background: none; border: none; height: 500px;">
+                            <img src="./images/Al Qahtani.png" alt="Al Qahtani" style="width: 100%; height: 100%; object-fit: contain; border: none;">
+                        </div>
+                        <div class="player-info">
+                            <h3>AL QAHTANI</h3>
+                            <span class="player-position">Center Back</span>
+                            <p class="player-number">#5</p>
+                            <p class="player-quote">"He plays the game like he's mapping the earth."</p>
+                        </div>
+                    </div>
+
+                    <div class="player-card">
+                        <div class="player-image" style="aspect-ratio: 2/3; overflow: hidden; display: flex; align-items: center; justify-content: center; background: none; border: none; height: 500px;">
+                            <img src="./images/Sharonda.png" alt="Sharonda" style="width: 100%; height: 100%; object-fit: contain; border: none; transform: scale(1.4);">
+                        </div>
+                        <div class="player-info">
+                            <h3>SHARONDA</h3>
+                            <span class="player-position">Right Back</span>
+                            <p class="player-number">#3</p>
+                            <p class="player-quote">"Defense is an art, and I'm the artist."</p>
+                        </div>
+                    </div>
+
+                    <div class="player-card">
+                        <div class="player-image" style="aspect-ratio: 2/3; overflow: hidden; display: flex; align-items: center; justify-content: center; background: none; border: none; height: 500px;">
+                            <img src="./images/Getta.png" alt="Getta" style="width: 100%; height: 100%; object-fit: contain; border: none;">
+                        </div>
+                        <div class="player-info">
+                            <h3>GETTA</h3>
+                            <span class="player-position">Goalkeeper</span>
+                            <p class="player-number">#1</p>
+                            <p class="player-quote">"At least a scarecrow would stay in one place."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-nav">
+                    <button class="nav-button prev">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="nav-button next">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-branding">
+                <div class="footer-logo">
+                    <img src="./images/tram crest transparent .jpg" alt="Post Oak FC Crest" class="crest-logo">
+                    <span>POST OAK FC</span>
+                </div>
+                <p class="footer-tagline">DOMINATING THE FIELD</p>
+            </div>
+            <div class="footer-links">
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2025 POST OAK FC. ALL RIGHTS RESERVED.</p>
+                <p class="disclaimer">Disclaimer: Post Oak FC is a student-run team and is not officially affiliated with or endorsed by Post Oak School or its athletic department. This is a fan website created for entertainment purposes only.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // News carousel functionality
+            const newsTrack = document.querySelector('.news-carousel .carousel-track');
+            const newsCards = document.querySelectorAll('.news-card');
+            const newsPrevBtn = document.querySelector('.news-carousel .nav-button.prev');
+            const newsNextBtn = document.querySelector('.news-carousel .nav-button.next');
+            let newsCurrentIndex = 0;
+            const newsCardWidth = newsCards[0].offsetWidth + parseInt(getComputedStyle(newsCards[0]).marginRight);
+            const newsMaxIndex = newsCards.length - Math.floor(newsTrack.offsetWidth / newsCardWidth);
+
+            function updateNewsCarousel() {
+                newsTrack.style.transform = `translateX(-${newsCurrentIndex * newsCardWidth}px)`;
+                newsPrevBtn.disabled = newsCurrentIndex === 0;
+                newsNextBtn.disabled = newsCurrentIndex >= newsMaxIndex;
+            }
+
+            newsPrevBtn.addEventListener('click', () => {
+                newsCurrentIndex = Math.max(newsCurrentIndex - 1, 0);
+                updateNewsCarousel();
+            });
+
+            newsNextBtn.addEventListener('click', () => {
+                newsCurrentIndex = Math.min(newsCurrentIndex + 1, newsMaxIndex);
+                updateNewsCarousel();
+            });
+
+            // Player carousel functionality
+            const playerTrack = document.querySelector('.player-carousel .carousel-track');
+            const playerCards = document.querySelectorAll('.player-carousel .player-card');
+            const playerPrevBtn = document.querySelector('.player-carousel .nav-button.prev');
+            const playerNextBtn = document.querySelector('.player-carousel .nav-button.next');
+            let playerCurrentIndex = 0;
+            const playerCardWidth = playerCards[0].offsetWidth + parseInt(getComputedStyle(playerCards[0]).marginRight);
+            const playerMaxIndex = playerCards.length - Math.floor(playerTrack.offsetWidth / playerCardWidth);
+
+            function updatePlayerCarousel() {
+                playerTrack.style.transform = `translateX(-${playerCurrentIndex * playerCardWidth}px)`;
+                playerPrevBtn.disabled = playerCurrentIndex === 0;
+                playerNextBtn.disabled = playerCurrentIndex >= playerMaxIndex;
+            }
+
+            playerPrevBtn.addEventListener('click', () => {
+                playerCurrentIndex = Math.max(playerCurrentIndex - 1, 0);
+                updatePlayerCarousel();
+            });
+
+            playerNextBtn.addEventListener('click', () => {
+                playerCurrentIndex = Math.min(playerCurrentIndex + 1, playerMaxIndex);
+                updatePlayerCarousel();
+            });
+
+            // Touch swipe functionality for both carousels
+            let touchStartX = 0;
+            let touchEndX = 0;
+
+            [newsTrack, playerTrack].forEach((track, index) => {
+                track.addEventListener('touchstart', (e) => {
+                    touchStartX = e.touches[0].clientX;
+                });
+
+                track.addEventListener('touchmove', (e) => {
+                    touchEndX = e.touches[0].clientX;
+                });
+
+                track.addEventListener('touchend', () => {
+                    const swipeDistance = touchStartX - touchEndX;
+                    if (Math.abs(swipeDistance) > 50) {
+                        if (index === 0) { // News carousel
+                            if (swipeDistance > 0 && newsCurrentIndex < newsMaxIndex) {
+                                newsCurrentIndex++;
+                                updateNewsCarousel();
+                            } else if (swipeDistance < 0 && newsCurrentIndex > 0) {
+                                newsCurrentIndex--;
+                                updateNewsCarousel();
+                            }
+                        } else { // Player carousel
+                            if (swipeDistance > 0 && playerCurrentIndex < playerMaxIndex) {
+                                playerCurrentIndex++;
+                                updatePlayerCarousel();
+                            } else if (swipeDistance < 0 && playerCurrentIndex > 0) {
+                                playerCurrentIndex--;
+                                updatePlayerCarousel();
+                            }
+                        }
+                    }
+                });
+            });
+
+            // Initialize carousels
+            updateNewsCarousel();
+            updatePlayerCarousel();
+
+            // Modal functionality
+            newsCards.forEach(card => {
+                card.addEventListener('click', () => {
+                    const articleId = card.dataset.article;
+                    const modal = document.getElementById(`modal-${articleId}`);
+                    modal.classList.add('active');
+                    document.body.style.overflow = 'hidden';
+                });
+            });
+
+            document.querySelectorAll('.close-modal').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    btn.closest('.article-modal').classList.remove('active');
+                    document.body.style.overflow = '';
+                });
+            });
+
+            document.querySelectorAll('.article-modal').forEach(modal => {
+                modal.addEventListener('click', (e) => {
+                    if (e.target === modal) {
+                        modal.classList.remove('active');
+                        document.body.style.overflow = '';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html> 

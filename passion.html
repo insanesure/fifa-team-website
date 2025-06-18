@@ -1,1 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passion | ELITE FC</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .page-header { --bg-image: url('images/celebration.jpg'); }
+        .rules-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 3rem;
+            margin: 4rem 0;
+        }
+        .rule-card {
+            background: #f8f8f8;
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .rule-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: var(--accent);
+            transition: width 0.3s ease;
+        }
+        .rule-card:hover {
+            transform: translateX(10px);
+        }
+        .rule-card:hover::before {
+            width: 8px;
+        }
+        .rule-card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: var(--accent);
+        }
+        .quotes-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 3rem;
+            margin: 4rem 0;
+        }
+        .quote-card {
+            background: #000;
+            padding: 3rem;
+            border-radius: var(--border-radius);
+            color: #fff;
+            position: relative;
+            overflow: hidden;
+        }
+        .quote-card::before {
+            content: '"';
+            position: absolute;
+            top: -20px;
+            left: 20px;
+            font-size: 12rem;
+            font-family: 'Clash Display', sans-serif;
+            color: rgba(255,255,255,0.1);
+            line-height: 1;
+        }
+        .quote-card p {
+            font-size: 1.8rem;
+            line-height: 1.4;
+            margin-bottom: 2rem;
+            font-family: 'Clash Display', sans-serif;
+            font-weight: 600;
+            position: relative;
+            z-index: 1;
+        }
+        .quote-card cite {
+            font-style: normal;
+            color: var(--accent);
+            font-size: 1rem;
+            letter-spacing: 2px;
+            position: relative;
+            z-index: 1;
+        }
+        .griddy-rule {
+            background: linear-gradient(45deg, var(--accent), #9500ff);
+            color: #fff;
+            padding: 4rem;
+            border-radius: var(--border-radius);
+            margin: 4rem 0;
+            text-align: center;
+        }
+        .griddy-rule h2 {
+            font-size: 3.5rem;
+            margin-bottom: 2rem;
+            color: #fff;
+        }
+        .griddy-rule p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/crest.png" alt="Elite FC Crest" class="crest-logo">
+                    <span class="logo-text">ELITE FC</span>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="index.html#philosophy">PHILOSOPHY</a></li>
+                <li><a href="index.html#jerseys">KITS</a></li>
+                <li><a href="index.html#legacy">LEGACY</a></li>
+            </ul>
+        </div>
+    </nav>
 
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="header-content">
+            <h1 class="page-title">PASSION</h1>
+            <p class="page-subtitle">THE HEART OF OUR GAME</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="page-content">
+        <section class="content-section">
+            <h2>CELEBRATION RULES</h2>
+            <div class="rules-grid">
+                <div class="rule-card">
+                    <h3>THE GRIDDY</h3>
+                    <p>When scoring a crucial goal, The Griddy is mandatory. Style points are awarded for execution and timing.</p>
+                </div>
+                <div class="rule-card">
+                    <h3>TEAM PILE</h3>
+                    <p>Last-minute winners require a full team pile-on. No exceptions, even for the goalkeeper.</p>
+                </div>
+                <div class="rule-card">
+                    <h3>CAMERA LOVE</h3>
+                    <p>Find the nearest camera for your moment of glory. Make it memorable, make it viral.</p>
+                </div>
+                <div class="rule-card">
+                    <h3>SIGNATURE MOVES</h3>
+                    <p>Every player must develop their unique celebration. Originality is key, copying is forbidden.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>TEAM SPIRIT</h2>
+            <div class="quotes-grid">
+                <div class="quote-card">
+                    <p>"Never in my life, never in my life."</p>
+                    <cite>— Shonny Shanka</cite>
+                </div>
+                <div class="quote-card">
+                    <p>"I can't play on a yellow."</p>
+                    <cite>— Sha Nay Nay</cite>
+                </div>
+                <div class="quote-card">
+                    <p>"The pass button is broken."</p>
+                    <cite>— Sha Nay Nay</cite>
+                </div>
+                <div class="quote-card">
+                    <p>"Times all of y'all Man of the Matches by three and you still don't reach my level."</p>
+                    <cite>— Biggie Jamal</cite>
+                </div>
+            </div>
+        </section>
+
+        <section class="griddy-rule">
+            <h2>THE GRIDDY RULE</h2>
+            <p>When you score a goal that puts us ahead, you must Griddy. It's not just a celebration, it's a statement. The better the goal, the better the Griddy must be.</p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-branding">
+                <div class="footer-logo">
+                    <img src="images/crest.png" alt="Elite FC Crest" class="crest-logo">
+                    <span>ELITE FC</span>
+                </div>
+                <p class="footer-tagline">DOMINATING THE FIELD</p>
+            </div>
+            <div class="footer-links">
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2025 ELITE FC. ALL RIGHTS RESERVED.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 

@@ -1,1 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strategy | ELITE FC</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .page-header { --bg-image: url('images/tactics.jpg'); }
+        .formation-visual {
+            background: #000;
+            padding: 4rem;
+            border-radius: var(--border-radius);
+            margin: 3rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+        .formation-visual::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('images/field.jpg') center/cover;
+            opacity: 0.3;
+        }
+        .formation-grid {
+            position: relative;
+            z-index: 1;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            color: #fff;
+            text-align: center;
+        }
+        .player-position {
+            padding: 1rem;
+            background: rgba(106, 61, 228, 0.3);
+            border-radius: var(--border-radius);
+            backdrop-filter: blur(5px);
+        }
+        .player-position h4 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: var(--accent);
+        }
+        .player-position p {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+        .tactics-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 3rem;
+            margin: 4rem 0;
+        }
+        .tactic-card {
+            background: #f8f8f8;
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            transition: transform 0.3s ease;
+        }
+        .tactic-card:hover {
+            transform: translateY(-10px);
+        }
+        .tactic-card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: var(--accent);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/crest.png" alt="Elite FC Crest" class="crest-logo">
+                    <span class="logo-text">ELITE FC</span>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="index.html#philosophy">PHILOSOPHY</a></li>
+                <li><a href="index.html#jerseys">KITS</a></li>
+                <li><a href="index.html#legacy">LEGACY</a></li>
+            </ul>
+        </div>
+    </nav>
 
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="header-content">
+            <h1 class="page-title">STRATEGY</h1>
+            <p class="page-subtitle">MASTERING THE ART OF THE GAME</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="page-content">
+        <section class="content-section">
+            <h2>4-2-1-3 FORMATION</h2>
+            <p>Our signature formation is designed for maximum attacking potential while maintaining defensive stability. This innovative approach allows us to dominate possession and create multiple attacking channels.</p>
+            
+            <div class="formation-visual">
+                <div class="formation-grid">
+                    <div class="player-position">
+                        <h4>STRIKER</h4>
+                        <p>Target Man</p>
+                    </div>
+                    <div class="player-position">
+                        <h4>LEFT WING</h4>
+                        <p>Inside Forward</p>
+                    </div>
+                    <div class="player-position">
+                        <h4>CAM</h4>
+                        <p>Playmaker</p>
+                    </div>
+                    <div class="player-position">
+                        <h4>RIGHT WING</h4>
+                        <p>Inverted Winger</p>
+                    </div>
+                    <div class="player-position">
+                        <h4>CDM</h4>
+                        <p>Anchor</p>
+                    </div>
+                    <div class="player-position">
+                        <h4>CDM</h4>
+                        <p>Box-to-Box</p>
+                    </div>
+                    <div class="player-position">
+                        <h4>LB</h4>
+                        <p>Wing Back</p>
+                    </div>
+                    <div class="player-position">
+                        <h4>CB</h4>
+                        <p>Ball Playing Defender</p>
+                    </div>
+                    <div class="player-position">
+                        <h4>CB</h4>
+                        <p>Stopper</p>
+                    </div>
+                    <div class="player-position">
+                        <h4>RB</h4>
+                        <p>Wing Back</p>
+                    </div>
+                    <div class="player-position">
+                        <h4>GK</h4>
+                        <p>Sweeper Keeper</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>TACTICAL APPROACH</h2>
+            <div class="tactics-grid">
+                <div class="tactic-card">
+                    <h3>HIGH PRESS</h3>
+                    <p>Aggressive pressing from the front line, forcing opponents into mistakes and quick turnovers. Our forwards are the first line of defense.</p>
+                </div>
+                <div class="tactic-card">
+                    <h3>POSSESSION</h3>
+                    <p>Building from the back with short, precise passes. Creating triangles and utilizing the full width of the pitch to stretch opponents.</p>
+                </div>
+                <div class="tactic-card">
+                    <h3>QUICK TRANSITIONS</h3>
+                    <p>Rapid switches from defense to attack, catching opponents off guard. Utilizing the pace of our wingers for devastating counterattacks.</p>
+                </div>
+                <div class="tactic-card">
+                    <h3>FLUID MOVEMENT</h3>
+                    <p>Constant positional rotation and interchanging, making it difficult for opponents to mark and track our players.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-branding">
+                <div class="footer-logo">
+                    <img src="images/crest.png" alt="Elite FC Crest" class="crest-logo">
+                    <span>ELITE FC</span>
+                </div>
+                <p class="footer-tagline">DOMINATING THE FIELD</p>
+            </div>
+            <div class="footer-links">
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2025 ELITE FC. ALL RIGHTS RESERVED.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 
