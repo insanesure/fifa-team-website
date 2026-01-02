@@ -1412,3 +1412,24 @@ footer {
     background: rgba(255,255,255,0.1);
     box-shadow: 0 20px 40px rgba(0,0,0,0.2);
 } 
+/* Make the image behave like the placeholder: contained, centered, with nice sizing */
+.jersey-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 0;
+  /* control the visible box size so it looks like the old placeholder */
+  width: 100%;
+  max-width: 420px; /* match the old placeholder width (tweak as needed) */
+  margin: 0 auto;
+}
+
+.jersey-image {
+  display: block;
+  width: 100%;
+  height: auto;           /* preserve aspect ratio */
+  object-fit: contain;    /* ensures image is contained inside the box without stretching */
+  object-position: center;
+  max-height: 520px;      /* optional - prevents extremely tall images */
+  border-radius: 8px;     /* optional to match old rounded corners */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
